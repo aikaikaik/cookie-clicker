@@ -2115,7 +2115,7 @@ Game.Launch=function()
 		});
 
 		Game.SpecialGrandmaUnlock=15;
-		new Game.Object('Grandma','grandma|grandmas|baked','A nice grandma to bake more cookies.','grandma','grandmaIcon','grandmaBackground',100,function(){
+		new Game.Object('Grandma','grandma|grandmas|baked','A nice Megel to bake more bagels. His knowlodge of bagelverse is huge, yet useless (maybe?)','grandma','grandmaIcon','grandmaBackground',100,function(){
 			var mult=0;
 			if (Game.Has('Farmer grandmas')) mult++;
 			if (Game.Has('Worker grandmas')) mult++;
@@ -2157,7 +2157,7 @@ Game.Launch=function()
 			}
 		};
 
-		new Game.Object('Farm','farm|farms|harvested','Grows cookie plants from cookie seeds.','farm','farmIcon','farmBackground',500,function(){
+		new Game.Object('Farm','farm|farms|harvested','Grows bagel plants from bagel seeds.','farm','farmIcon','farmBackground',500,function(){
 			return Game.ComputeCps(2,Game.Has('Cheap hoes')*0.5,Game.Has('Fertilizer')+Game.Has('Cookie trees')+Game.Has('Genetically-modified cookies'));
 		},Game.NewDrawFunction(0,16,16,64,2,32),function(){
 			if (this.amount>=1) Game.Unlock(['Cheap hoes','Fertilizer']);if (this.amount>=10) Game.Unlock('Cookie trees');if (this.amount>=50) Game.Unlock('Genetically-modified cookies');
@@ -2780,7 +2780,7 @@ Game.Launch=function()
 
 		order=7000;
 		new Game.Achievement('One with everything','Have <b>at least 1</b> of every building.',[4,6],2);
-		new Game.Achievement('Mathematician','Have at least <b>1 time machine, 2 portals, 4 alchemy labs, 8 shipments</b> and so on (128 max).',[7,6],2);
+		new Game.Achievement('Bar Ilan','Have at least <b>1 time machine, 2 portals, 4 alchemy labs, 8 shipments</b> and so on (128 max).',[7,6],2);
 		new Game.Achievement('Base 10','Have at least <b>10 time machines, 20 portals, 30 alchemy labs, 40 shipments</b> and so on.',[8,6],2);
 
 		order=10000;
@@ -2801,12 +2801,12 @@ Game.Launch=function()
 		new Game.Achievement('Augmenter','Purchase <b>50</b> upgrades.',[9,1],1);
 
 		order=11000;
-		new Game.Achievement('Cookie-dunker','Dunk the cookie.<q>You did it!</q>',[4,7],2);
+		new Game.Achievement('Bagel-dunker','Dunk the bagel.<q>You did it!</q>',[4,7],2);
 
 		order=10000;
 		new Game.Achievement('Fortune','Click <b>77 golden cookies</b>.<q>You should really go to bed.</q>',[10,1],1);
 		order=31000;
-		new Game.Achievement('True Neverclick','Make <b>1 million</b> cookies with <b>no</b> cookie clicks.<q>This kinda defeats the whole purpose, doesn\'t it?</q>',[12,0],3);
+		new Game.Achievement('True Neverclick','Make <b>1 million</b> bagels with <b>no</b> bagel clicks.<q>This kinda defeats the whole purpose, doesn\'t it?</q>',[12,0],3);
 
 		order=20000;
 		new Game.Achievement('Elder nap','Appease the grandmatriarchs at least <b>once</b>.<q>we<br>are<br>eternal</q>',[8,9],2);
