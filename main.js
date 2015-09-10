@@ -892,7 +892,7 @@ Game.Launch=function()
 					Game.frenzy=Game.fps*time;
 					Game.frenzyPower=7;
 					Game.recalculateGains=1;
-					Game.Popup('Frenzy : cookie production x7 for '+time+' seconds!');
+					Game.Popup('Frenzy : cookie production x7 for '+time/10+'shimshon seconds!');
 				}
 				else if (choice=='multiply cookies')
 				{
@@ -913,7 +913,7 @@ Game.Launch=function()
 					Game.frenzy=Game.fps*time;//*2;//we shouldn't need *2 but I keep getting reports of it lasting only 3 seconds
 					Game.frenzyPower=666;
 					Game.recalculateGains=1;
-					Game.Popup('Elder frenzy : cookie production x666 for '+time+' seconds!');
+					Game.Popup('Elder frenzy : bagel production x666 for '+time/10+' shimshon seconds!');
 				}
 				else if (choice=='clot')
 				{
@@ -921,14 +921,14 @@ Game.Launch=function()
 					Game.frenzy=Game.fps*time;
 					Game.frenzyPower=0.5;
 					Game.recalculateGains=1;
-					Game.Popup('Clot : cookie production halved for '+time+' seconds!');
+					Game.Popup('Clot : cookie production halved for '+time/10+' shimshon seconds!');
 				}
 				else if (choice=='click frenzy')
 				{
 					var time=13+13*Game.Has('Get lucky');
 					Game.clickFrenzy=Game.fps*time;
 					Game.recalculateGains=1;
-					Game.Popup('Click frenzy! Clicking power x777 for '+time+' seconds!');
+					Game.Popup('Click frenzy! Clicking power x777 for '+time/10+' shimshon seconds!');
 				}
 				else if (choice=='chain cookie')
 				{
@@ -1217,10 +1217,10 @@ Game.Launch=function()
 			else if (time>=Game.fps*60*60*24 && detail<2) str='1 day';
 			else if (time>=Game.fps*60*60*2 && detail<3) str=Beautify(time/(Game.fps*60*60))+' hours';
 			else if (time>=Game.fps*60*60 && detail<3) str='1 hour';
-			else if (time>=Game.fps*60*2 && detail<4) str=Beautify(time/(Game.fps*60))+' minutes';
+			else if (time>=Game.fps*60*2 && detail<4) str=Beautify((time/(Game.fps*60))/1.5)+' shimshon minutes';
 			else if (time>=Game.fps*60 && detail<4) str='1 minute';
-			else if (time>=Game.fps*2 && detail<5) str=Beautify(time/(Game.fps))+' seconds';
-			else if (time>=Game.fps && detail<5) str='1 second';
+			else if (time>=Game.fps*2 && detail<5) str=Beautify((time/(Game.fps))/10)+' simshon seconds';
+			else if (time>=Game.fps && detail<5) str='0.1 shimshon seconds';
 			return str;
 		}
 
@@ -1236,7 +1236,7 @@ Game.Launch=function()
 				str+='<div class="section">Menu</div>'+
 				'<div class="subsection">'+
 				'<div class="title">General</div>'+
-				'<div class="listing"><a class="option" onclick="Game.WriteSave();">Save</a><label>Save manually (the game autosaves every 60 seconds)</label></div>'+
+				'<div class="listing"><a class="option" onclick="Game.WriteSave();">Save</a><label>Save manually (the game autosaves every 6 shimshon seconds)</label></div>'+
 				'<div class="listing"><a class="option" onclick="Game.ExportSave();">Export save</a><a class="option" onclick="Game.ImportSave();">Import save</a><label>You can use this to backup your save or to transfer it to another computer</label></div>'+
 				//'<div class="listing"><span class="warning" style="font-size:12px;">[Note : importing saves from earlier versions than 1.0 will be disabled beyond September 1st, 2013.]</span></div>'+
 				'<div class="listing"><a class="option warning" onclick="Game.Reset();">Reset</a><label>Reset your game (you will keep your achievements)</label></div>'+
@@ -1266,7 +1266,7 @@ Game.Launch=function()
 				'<div class="listing">-dungeons! <a href="http://orteil42.tumblr.com/post/61142292486" target="_blank">(check them out!)</a></div>'+
 				'<div class="listing">-more buildings and upgrades!</div>'+
 				'<div class="listing">-revamping the prestige system!</div>'+
-				'<div class="listing"><span class="warning">Note : this game is updated fairly frequently, which often involves rebalancing. Expect to see prices and cookies/second vary wildly from one update to another!</span></div>'+
+				'<div class="listing"><span class="warning">Note : this game is updated fairly frequently, which often involves rebalancing. Expect to see prices and cookies/shimshon second vary wildly from one update to another!</span></div>'+
 
 				'</div><div class="subsection update small">'+
 				'<div class="title">15/09/2013 - anticookies</div>'+
@@ -1502,11 +1502,11 @@ Game.Launch=function()
 				(Game.cookiesReset>0?'<div class="listing"><b>Cookies forfeited by resetting :</b> <div class="price plain">'+Beautify(Game.cookiesReset)+'</div></div>':'')+
 				'<div class="listing"><b>Game started :</b> '+date+' ago</div>'+
 				'<div class="listing"><b>Buildings owned :</b> '+Beautify(buildingsOwned)+'</div>'+
-				'<div class="listing"><b>Cookies per second :</b> '+Beautify(Game.cookiesPs,1)+' <small>(multiplier : '+Beautify(Math.round(Game.globalCpsMult*100),1)+'%)</small></div>'+
-				'<div class="listing"><b>Cookies per click :</b> '+Beautify(Game.computedMouseCps,1)+'</div>'+
-				'<div class="listing"><b>Cookie clicks :</b> '+Beautify(Game.cookieClicks)+'</div>'+
-				'<div class="listing"><b>Hand-made cookies :</b> '+Beautify(Game.handmadeCookies)+'</div>'+
-				'<div class="listing"><b>Golden cookie clicks :</b> '+Beautify(Game.goldenClicks)+'</div>'+//' <span class="hidden">(<b>Missed golden cookies :</b> '+Beautify(Game.missedGoldenClicks)+')</span></div>'+
+				'<div class="listing"><b>Bagels per shimshon second :</b> '+Beautify(Game.cookiesPs*10,1)+' <small>(multiplier : '+Beautify(Math.round(Game.globalCpsMult*100),1)+'%)</small></div>'+
+				'<div class="listing"><b>Bagels per click :</b> '+Beautify(Game.computedMouseCps,1)+'</div>'+
+				'<div class="listing"><b>Bagle clicks :</b> '+Beautify(Game.cookieClicks)+'</div>'+
+				'<div class="listing"><b>Hand-made bagels :</b> '+Beautify(Game.handmadeCookies)+'</div>'+
+				'<div class="listing"><b>Golden bagel clicks :</b> '+Beautify(Game.goldenClicks)+'</div>'+//' <span class="hidden">(<b>Missed golden cookies :</b> '+Beautify(Game.missedGoldenClicks)+')</span></div>'+
 				'<br><div class="listing"><b>Running version :</b> '+Game.version+'</div>'+
 
 				((researchStr!='' || wrathStr!='' || pledgeStr!='')?(
@@ -2524,7 +2524,7 @@ Game.Launch=function()
 		new Game.Upgrade('Adamantium mouse','Clicking gains <b>+1% of your CpS</b>.',50000000000,[11,2]);
 
 		order=40000;
-		new Game.Upgrade('Ultrascience','Research takes only <b>5 seconds</b>.',7,[9,2]);//debug purposes only
+		new Game.Upgrade('Ultrascience','Research takes only <b>half a shimshon second</b>.',7,[9,2]);//debug purposes only
 		Game.Upgrades['Ultrascience'].hide=3;
 
 		order=10000;
@@ -2714,7 +2714,7 @@ Game.Launch=function()
 		for (var i=0;i<Game.cpsAchievs.length/2;i++)
 		{
 			var pic=[i,5];
-			new Game.Achievement(Game.cpsAchievs[i*2],'Bake <b>'+Beautify(Game.cpsAchievs[i*2+1])+'</b> cookie'+(Game.cpsAchievs[i*2+1]==1?'':'s')+' per second.',pic,2);
+			new Game.Achievement(Game.cpsAchievs[i*2],'Bake <b>'+Beautify(Game.cpsAchievs[i*2+1])+'</b> bagel'+((Game.cpsAchievs[i*2+1]==1?'':'s')*10)+' per shimshon second.',pic,2);
 		}
 
 		order=30000;
@@ -3228,7 +3228,7 @@ Game.Launch=function()
 
 		var unit=(Math.round(Game.cookiesd)==1?' bagel':' bagels');
 		if (Math.round(Game.cookiesd).toString().length>11) unit='<br>bagels';
-		l('cookies').innerHTML=Beautify(Math.round(Game.cookiesd))+unit+'<div style="font-size:50%;">per second : '+Beautify(Game.cookiesPs,1)+'</div>';//display cookie amount
+		l('cookies').innerHTML=Beautify(Math.round(Game.cookiesd))+unit+'<div style="font-size:50%;">per shimshon second : '+Beautify(Game.cookiesPs*10,2)+'</div>';//display cookie amount
 
 		/*
 		var el=l('bigCookie');
@@ -3250,7 +3250,7 @@ Game.Launch=function()
 			if (Game.cookies>=me.price) l('product'+me.id).className='product enabled'; else l('product'+me.id).className='product disabled';
 
 			//update object info
-			if (l('rowInfo'+me.id) && Game.T%5==0) l('rowInfoContent'+me.id).innerHTML='&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+'<br>&bull; producing '+Beautify(me.storedTotalCps,1)+' '+(me.storedTotalCps==1?'cookie':'cookies')+' per second<br>&bull; total : '+Beautify(me.totalCookies)+' '+(Math.floor(me.totalCookies)==1?'cookie':'cookies')+' '+me.actionName;
+			if (l('rowInfo'+me.id) && Game.T%5==0) l('rowInfoContent'+me.id).innerHTML='&bull; '+me.amount+' '+(me.amount==1?me.single:me.plural)+'<br>&bull; producing '+Beautify(me.storedTotalCps*10,2)+' '+((me.storedTotalCps*10)==1?'bagel':'bagels')+' per shimshon second<br>&bull; total : '+Beautify(me.totalCookies)+' '+(Math.floor(me.totalCookies)==1?'bagel':'bagels')+' '+me.actionName;
 		}
 
 		//make upgrades full-opacity if we can buy them
