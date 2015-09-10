@@ -1657,129 +1657,129 @@ Game.Launch=function()
 				]));
 
 				if (Game.Objects['Farm'].amount>0) list.push(choose([
-				'News : cookie farms suspected of employing undeclared elderly workforce!',
-				'News : cookie farms release harmful chocolate in our rivers, says scientist!',
-				'News : genetically-modified chocolate controversy strikes cookie farmers!',
-				'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-				'News : farm cookies deemed unfit for vegans, says nutritionist.'
+				'News : bagel farms suspected of employing undeclared elderly workforce!',
+				'News : bagel farms release harmful sesome in our rivers, says scientist!',
+				'News : genetically-modified sesome controversy strikes bagel farmers!',
+				'News : free-range farm bagels popular with today\'s hip youth, says specialist.',
+				'News : farm bagels deemed unfit for vegans, says nutritionist.'
 				]));
 
 				if (Game.Objects['Factory'].amount>0) list.push(choose([
-				'News : cookie factories linked to global warming!',
-				'News : cookie factories involved in chocolate weather controversy!',
-				'News : cookie factories on strike, robotic minions employed to replace workforce!',
-				'News : cookie factories on strike - workers demand to stop being paid in cookies!',
-				'News : factory-made cookies linked to obesity, says study.'
+				'News : pretzel factories linked to global warming!',
+				'News : pretzel factories involved in sesome weather controversy!',
+				'News : pretzel factories on strike, robotic minions employed to replace workforce!',
+				'News : pretzel factories on strike - workers demand to stop being paid in bagels!',
+				'News : factory-made bagels linked to obesity, says study.'
 				]));
 
 				if (Game.Objects['Mine'].amount>0) list.push(choose([
-				'News : '+Math.floor(Math.random()*1000+2)+' miners dead in chocolate mine catastrophe!',
-				'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed chocolate mine!',
-				'News : chocolate mines found to cause earthquakes and sink holes!',
-				'News : chocolate mine goes awry, floods village in chocolate!',
-				'News : depths of chocolate mines found to house "peculiar, chocolaty beings"!'
+				'News : '+Math.floor(Math.random()*1000+2)+' miners dead in sesome mine catastrophe!',
+				'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed sesome mine!',
+				'News : sesome mines found to cause earthquakes and sink holes!',
+				'News : sesome mine goes awry, floods village in sesome!',
+				'News : depths of sesome mines found to house "peculiar, sesomey beings"!'
 				]));
 
 				if (Game.Objects['Shipment'].amount>0) list.push(choose([
-				'News : new chocolate planet found, becomes target of cookie-trading spaceships!',
-				'News : massive chocolate planet found with 99.8% certified pure dark chocolate core!',
+				'News : new sesome planet found, becomes target of sesome-trading spaceships!',
+				'News : massive sesome planet found with 99.8% certified pure light sesome core!',
 				'News : space tourism booming as distant planets attract more bored millionaires!',
-				'News : chocolate-based organisms found on distant planet!',
+				'News : sesome-based organisms found on distant planet!',
 				'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.'
 				]));
 
 				if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
-				'News : national gold reserves dwindle as more and more of the precious mineral is turned to cookies!',
-				'News : chocolate jewelry found fashionable, gold and diamonds "just a fad", says specialist.',
-				'News : silver found to also be transmutable into white chocolate!',
-				'News : defective alchemy lab shut down, found to convert cookies to useless gold.',
-				'News : alchemy-made cookies shunned by purists!'
+				'News : national gold reserves dwindle as more and more of the precious mineral is turned to pretzels!',
+				'News : sesome jewelry found fashionable, gold and diamonds "just a fad", says specialist.',
+				'News : silver found to also be transmutable into white sesome!',
+				'News : defective alchemy lab shut down, found to convert bagels to useless gold.',
+				'News : alchemy-made pretzels shunned by purists!'
 				]));
 
 				if (Game.Objects['Portal'].amount>0) list.push(choose([
 				'News : nation worried as more and more unsettling creatures emerge from dimensional portals!',
 				'News : dimensional portals involved in city-engulfing disaster!',
-				'News : tourism to cookieverse popular with bored teenagers! Casualty rate as high as 73%!',
-				'News : cookieverse portals suspected to cause fast aging and obsession with baking, says study.',
+				'News : tourism to bagelverse popular with bored teenagers! Casualty rate as high as 73%!',
+				'News : bagelverse portals suspected to cause fast aging and obsession with baking, says study.',
 				'News : "do not settle near portals," says specialist; "your children will become strange and corrupted inside."'
 				]));
 
 				if (Game.Objects['Time machine'].amount>0) list.push(choose([
 				'News : time machines involved in history-rewriting scandal! Or are they?',
 				'News : time machines used in unlawful time tourism!',
-				'News : cookies brought back from the past "unfit for human consumption", says historian.',
+				'News : pretzels brought back from the past "unfit for human consumption", says historian.',
 				'News : various historical figures inexplicably replaced with talking lumps of dough!',
 				'News : "I have seen the future," says time machine operator, "and I do not wish to go there again."'
 				]));
 
 				if (Game.Objects['Antimatter condenser'].amount>0) list.push(choose([
 				'News : whole town seemingly swallowed by antimatter-induced black hole; more reliable sources affirm town "never really existed"!',
-				'News : "explain to me again why we need particle accelerators to bake cookies?" asks misguided local woman.',
+				'News : "explain to me again why we need particle accelerators to bake bagels?" asks misguided local woman.',
 				'News : first antimatter condenser successfully turned on, doesn\'t rip apart reality!',
-				'News : researchers conclude that what the cookie industry needs, first and foremost, is "more magnets".',
-				'News : "unravelling the fabric of reality just makes these cookies so much tastier", claims scientist.'
+				'News : researchers conclude that what the pretzel industry needs, first and foremost, is "more magnets".',
+				'News : "unravelling the fabric of reality just makes these bagels so much tastier", claims scientist.'
 				]));
 
-				if (Game.HasAchiev('Base 10')) list.push('News : cookie manufacturer completely forgoes common sense, lets OCD drive building decisions!');
-				if (Game.HasAchiev('From scratch')) list.push('News : follow the tear-jerking, riches-to-rags story about a local cookie manufacturer who decided to give it all up!');
-				if (Game.HasAchiev('A world filled with cookies')) list.push('News : known universe now jammed with cookies! No vacancies!');
-				if (Game.HasAchiev('Serendipity')) list.push('News : local cookie manufacturer becomes luckiest being alive!');
+				if (Game.HasAchiev('Base 10')) list.push('News : bagel manufacturer completely forgoes common sense, lets OCD drive building decisions!');
+				if (Game.HasAchiev('From scratch')) list.push('News : follow the tear-jerking, riches-to-rags story about a local bagel manufacturer who decided to give it all up!');
+				if (Game.HasAchiev('A world filled with cookies')) list.push('News : known universe now jammed with bagels! No vacancies!');
+				if (Game.HasAchiev('Serendipity')) list.push('News : local bagel manufacturer becomes luckiest being alive!');
 
-				if (Game.Has('Kitten helpers')) list.push('News : faint meowing heard around local cookie facilities; suggests new ingredient being tested.');
+				if (Game.Has('Kitten helpers')) list.push('News : faint meowing heard around local bagel facilities; suggests new ingredient being tested.');
 				if (Game.Has('Kitten workers')) list.push('News : crowds of meowing kittens with little hard hats reported near local cookie facilities.');
-				if (Game.Has('Kitten engineers')) list.push('News : surroundings of local cookie facilities now overrun with kittens in adorable little suits. Authorities advise to stay away from the premises.');
+				if (Game.Has('Kitten engineers')) list.push('News : surroundings of local bagel facilities now overrun with kittens in adorable little suits. Authorities advise to stay away from the premises.');
 				if (Game.Has('Kitten overseers')) list.push('News : locals report troups of bossy kittens meowing adorable orders at passerbys.');
 
-				var animals=['newts','penguins','scorpions','axolotls','puffins','porpoises','blowfish','horses','crayfish','slugs','humpback whales','nurse sharks','giant squids','polar bears','fruit bats','frogs','sea squirts','velvet worms','mole rats','paramecia','nematodes','tardigrades','giraffes'];
+				var animals=['newts','penguins','scorpions','axolotls','puffins','porpoises','blowfish','horses','crayfish','slugs','humpback whales','nurse sharks','giant squids','polar bears','fruit bats','frogs','sea squirts','velvet worms','mole rats','paramecia','nematodes','tardigrades','giraffes','partsiflochs'];
 				if (Game.cookiesEarned>=10000) list.push(
 				'News : '+choose([
-					'cookies found to '+choose(['increase lifespan','sensibly increase intelligence','reverse aging','decrease hair loss','prevent arthritis','cure blindness'])+' in '+choose(animals)+'!',
-					'cookies found to make '+choose(animals)+' '+choose(['more docile','more handsome','nicer','less hungry','more pragmatic','tastier'])+'!',
-					'cookies tested on '+choose(animals)+', found to have no ill effects.',
-					'cookies unexpectedly popular among '+choose(animals)+'!',
+					'bagels found to '+choose(['increase lifespan','sensibly increase intelligence','reverse aging','decrease hair loss','prevent arthritis','cure blindness'])+' in '+choose(animals)+'!',
+					'bagels found to make '+choose(animals)+' '+choose(['more docile','more handsome','nicer','less hungry','more pragmatic','tastier'])+'!',
+					'bagels tested on '+choose(animals)+', found to have no ill effects.',
+					'bagels unexpectedly popular among '+choose(animals)+'!',
 					'unsightly lumps found on '+choose(animals)+' near cookie facility; "they\'ve pretty much always looked like that", say biologists.',
-					'new species of '+choose(animals)+' discovered in distant country; "yup, tastes like cookies", says biologist.',
-					'cookies go well with roasted '+choose(animals)+', says controversial chef.',
-					'"do your cookies contain '+choose(animals)+'?", asks PSA warning against counterfeit cookies.'
+					'new species of '+choose(animals)+' discovered in distant country; "yup, tastes like bagels", says biologist.',
+					'bagels go well with roasted '+choose(animals)+', says controversial chef.',
+					'"do your bagels contain '+choose(animals)+'?", asks PSA warning against counterfeit pretzels.'
 					]),
 				'News : "'+choose([
-					'I\'m all about cookies',
-					'I just can\'t stop eating cookies. I think I seriously need help',
-					'I guess I have a cookie problem',
-					'I\'m not addicted to cookies. That\'s just speculation by fans with too much free time',
-					'my upcoming album contains 3 songs about cookies',
-					'I\'ve had dreams about cookies 3 nights in a row now. I\'m a bit worried honestly',
-					'accusations of cookie abuse are only vile slander',
-					'cookies really helped me when I was feeling low',
-					'cookies are the secret behind my perfect skin',
-					'cookies helped me stay sane while filming my upcoming movie',
-					'cookies helped me stay thin and healthy',
-					'I\'ll say one word, just one : cookies',
-					'alright, I\'ll say it - I\'ve never eaten a single cookie in my life'
+					'I\'m all about bagels',
+					'I just can\'t stop eating bagels. I think I seriously need help',
+					'I guess I have a pretzel problem',
+					'I\'m not addicted to pretzels. That\'s just speculation by fans with too much free time',
+					'my upcoming album contains 3 songs about bagels',
+					'I\'ve had dreams about bagels 3 nights in a row now. I\'m a bit worried honestly',
+					'accusations of pretzel abuse are only vile slander',
+					'bagels really helped me when I was feeling low',
+					'bagels are the secret behind my perfect skin',
+					'bagels helped me stay sane while filming my upcoming movie',
+					'pretzel helped me stay thin and healthy',
+					'I\'ll say one word, just one : bagels',
+					'alright, I\'ll say it - I\'ve never eaten a single pretzel in my life'
 					])+'", reveals celebrity.',
-				'News : '+choose(['doctors recommend twice-daily consumption of fresh cookies.','doctors warn against chocolate chip-snorting teen fad.','doctors advise against new cookie-free fad diet.','doctors warn mothers about the dangers of "home-made cookies".']),
+				'News : '+choose(['doctors recommend twice-daily consumption of fresh pretzels.','doctors warn against sesame-snorting teen fad.','doctors advise against new pretzel-free fad diet.','doctors warn mothers about the dangers of "home-made bagels".']),
 				choose([
-					'News : scientist predicts imminent cookie-related "end of the world"; becomes joke among peers.',
-					'News : man robs bank, buys cookies.',
-					'News : what makes cookies taste so right? "Probably all the [*****] they put in them", says anonymous tipper.',
-					'News : man found allergic to cookies; "what a weirdo", says family.',
-					'News : foreign politician involved in cookie-smuggling scandal.',
-					'News : cookies now more popular than '+choose(['cough drops','broccoli','smoked herring','cheese','video games','stable jobs','relationships','time travel','cat videos','tango','fashion','television','nuclear warfare','whatever it is we ate before','politics','oxygen','lamps'])+', says study.',
-					'News : obesity epidemic strikes nation; experts blame '+choose(['twerking','that darn rap music','video-games','lack of cookies','mysterious ghostly entities','aliens','parents','schools','comic-books','cookie-snorting fad'])+'.',
-					'News : cookie shortage strikes town, people forced to eat cupcakes; "just not the same", concedes mayor.',
-					'News : "you gotta admit, all this cookie stuff is a bit ominous", says confused idiot.',
-					'News : movie cancelled from lack of actors; "everybody\'s at home eating cookies", laments director.',
-					'News : comedian forced to cancel cookie routine due to unrelated indigestion.',
-					'News : new cookie-based religion sweeps the nation.',
-					'News : fossil records show cookie-based organisms prevalent during Cambrian explosion, scientists say.',
-					'News : mysterious illegal cookies seized; "tastes terrible", says police.',
-					'News : man found dead after ingesting cookie; investigators favor "mafia snitch" hypothesis.',
-					'News : "the universe pretty much loops on itself," suggests researcher; "it\'s cookies all the way down."',
-					'News : minor cookie-related incident turns whole town to ashes; neighboring cities asked to chip in for reconstruction.',
-					'News : is our media controlled by the cookie industry? This could very well be the case, says crackpot conspiracy theorist.',
-					'News : '+choose(['cookie-flavored popcorn pretty damn popular; "we kinda expected that", say scientists.','cookie-flavored cereals break all known cereal-related records','cookies popular among all age groups, including fetuses, says study.','cookie-flavored popcorn sales exploded during screening of Grandmothers II : The Moistening.']),
-					'News : all-cookie restaurant opening downtown. Dishes such as braised cookies, cookie thermidor, and for dessert : crepes.',
-					'News : cookies could be the key to '+choose(['eternal life','infinite riches','eternal youth','eternal beauty','curing baldness','world peace','solving world hunger','ending all wars world-wide','making contact with extraterrestrial life','mind-reading','better living','better eating','more interesting TV shows','faster-than-light travel','quantum baking','chocolaty goodness','gooder thoughtness'])+', say scientists.'
+					'News : scientist predicts imminent pretzel-related "end of the world"; becomes joke among peers.',
+					'News : man robs bank, buys bagels.',
+					'News : what makes bagels taste so right? "Probably all the [*****] they put in them", says anonymous tipper.',
+					'News : man found allergic to pretzels; "what a weirdo", says family.',
+					'News : foreign politician involved in pretzel-smuggling scandal.',
+					'News : pretzels now more popular than '+choose(['cough drops','broccoli','smoked herring','cheese','video games','stable jobs','relationships','time travel','cat videos','tango','fashion','television','nuclear warfare','whatever it is we ate before','politics','oxygen','lamps'])+', says study.',
+					'News : obesity epidemic strikes nation; experts blame '+choose(['twerking','that darn rap music','video-games','lack of pretzels','mysterious ghostly entities','aliens','parents','schools','comic-books','cookie-snorting fad'])+'.',
+					'News : bagel shortage strikes town, people forced to eat cupcakes; "just not the same", concedes mayor.',
+					'News : "you gotta admit, all this bagel stuff is a bit ominous", says confused idiot.',
+					'News : movie cancelled from lack of actors; "everybody\'s at home eating bagels", laments director.',
+					'News : comedian forced to cancel bagel routine due to unrelated indigestion.',
+					'News : new pretzel-based religion sweeps the nation.',
+					'News : fossil records show pretzel-based organisms prevalent during Cambrian explosion, scientists say.',
+					'News : mysterious illegal pretzels seized; "tastes terrible", says police.',
+					'News : man found dead after ingesting a pretzel; investigators favor "mafia snitch" hypothesis.',
+					'News : "the universe pretty much loops on itself," suggests researcher; "it\'s bagels all the way down."',
+					'News : minor bagel-related incident turns whole town to ashes; neighboring cities asked to chip in for reconstruction.',
+					'News : is our media controlled by the pretzel industry? This could very well be the case, says crackpot conspiracy theorist.',
+					'News : '+choose(['bagel-flavored popcorn pretty damn popular; "we kinda expected that", say scientists.','bagel-flavored cereals break all known cereal-related records','bagels popular among all age groups, including fetuses, says study.','bagel-flavored popcorn sales exploded during screening of Grandmothers II : The Moistening.']),
+					'News : all-pretzel restaurant opening downtown. Dishes such as braised pretzel, pretzel thermidor, and for dessert : crepes.',
+					'News : pretzels could be the key to '+choose(['eternal life','infinite riches','eternal youth','eternal beauty','curing baldness','world peace','solving world hunger','ending all wars world-wide','making contact with extraterrestrial life','mind-reading','better living','better eating','more interesting TV shows','faster-than-light travel','quantum baking','sesome goodness','gooder thoughtness'])+', say scientists.'
 					])
 				);
 			}
