@@ -1801,8 +1801,8 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<80000) list.push('Kings and queens from all over the world are enjoying your bagels.');
 				else if (Game.cookiesEarned<100000) list.push('There are now museums and archives dedicated to your bagels.');
 				else if (Game.cookiesEarned<200000) list.push('A national day has been created in honor of your bagels.');
-				else if (Game.cookiesEarned<300000) list.push('Your cookies have been named a part of the world wonders.');
-				else if (Game.cookiesEarned<450000) list.push('History books now include a whole chapter about your cookies.');
+				else if (Game.cookiesEarned<300000) list.push('Your bagels have been named a part of the world wonders.');
+				else if (Game.cookiesEarned<450000) list.push('History books now include a whole chapter about your bagels.');
 				else if (Game.cookiesEarned<600000) list.push('Your bagels have been placed under government surveillance.');
 				else if (Game.cookiesEarned<1000000) list.push('The whole planet is enjoying your bagels! It is very sad.');
 				else if (Game.cookiesEarned<5000000) list.push('Strange creatures from neighboring planets wish to try your bagels.');
